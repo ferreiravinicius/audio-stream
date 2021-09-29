@@ -56,7 +56,7 @@ Open-source, compete direto com RTMP e RTSP.
 
 * WebRTC  
 Quase tempo-real.  
-👍 Baixissima latência (500ms), compativel com browsers por padrão, qualidade
+👍 Baixissima latência (500ms), compativel com browsers por padrão, qualidade  
 👎 Ainda pouco utilizado e sem suporte
 
 Protocolos
