@@ -1,5 +1,25 @@
 # Anotações
 
+## Conceitos Básicos
+
+* Codec  
+Meio de compressão da media
+
+* Protocolo  
+Meio de entrega da media
+
+* Playback  
+O cliente que recebe os dados deve ser compativel com o protocolo e com o codec
+
+* Transmuxing  
+Converte o dado recebido para outros protocolos
+
+* Transcoding  
+Comprime os dados, por exemplo, gerando um vídeo com menor resolução
+
+* Media server software  
+Faz o transmux e transcode dos dados e injeta mais dados conforme necessário
+
 ## Tipos de Stream
 
 * Adaptative Streaming  
@@ -11,6 +31,11 @@ Não é tecnicamente uma stream. A media é entregue por um servidor HTTP e é s
 Ex: Youtube
 
 ## Protocolos
+
+* RTMP  
+O tradicional e mais antigo protocolo de stream.  
+👍 Baixa latência (5s) e sem buffer/cache   
+👎 Perda de pacotes
 
 * HLS (Apple)  
 Suporta *adaptadive stream* via *HTTP*. Suportada por plataformas mobile e browsers.  
@@ -26,10 +51,13 @@ Variação do HLS da Apple. Promete latência baixa, mas é necessário que o cl
 
 * SRT  
 Open-source, compete direto com RTMP e RTSP.  
-👍 Prevenção de perda de pacote, baixa latência (3s), codec-agnostico.
+👍 Prevenção de perda de pacote, baixa latência (3s), codec-agnostico.  
 👎 Ainda pouco utilizado e sem suporte
 
-
+* WebRTC  
+Quase tempo-real.  
+👍 Baixissima latência (500ms), compativel com browsers por padrão, qualidade
+👎 Ainda pouco utilizado e sem suporte
 
 Protocolos
 https://www.wowza.com/blog/streaming-protocols
